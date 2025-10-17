@@ -360,6 +360,7 @@ Operations are paused when:
 - Manual override triggered by admin
 
 When circuit breakers are active, minting, redemption, and origination halt until revalidation. Repay, default(), claim()/settlement remain available.
+
 ---
 
 ## 7. System Flow Summary
