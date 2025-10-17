@@ -239,7 +239,7 @@ loanNAV ≈ PV(DebtDue) − BorrowerPutValue(P_market, LTV, σ, τ)
 ```
 
 Where:
-- `PV(DebtDue)` is the discounted value of principal + interest due at maturity (discounted at the risk‑free rate to reflect time value only)  
+- `PV(DebtDue)` is the discounted value of principal + interest due at maturity (discounted at the risk‑free rate)  
 - `BorrowerPutValue` reflects the probability‑weighted loss from default, increasing with higher volatility (σ) or lower collateral prices (P_market)  
 - `τ` is the remaining time to maturity  
 
@@ -336,7 +336,7 @@ Loan NAV represents the **mark-to-market fair value** of each loan, computed by 
 loanNAV ≈ PV(DebtDue) − BorrowerPutValue(P_market, σ, τ)
 ```
 
-- **PV(DebtDue)** — present value of principal plus accrued interest due at maturity, discounted at the risk‑free rate to reflect only time value.  
+- **PV(DebtDue)** — present value of principal plus accrued interest due at maturity, discounted at the risk‑free rate.  
 - **BorrowerPutValue** — value of the borrower’s embedded put option on their collateral, which rises with higher volatility (σ), lower market prices (P_market), or longer remaining time to maturity (τ).  
 - Loan NAV decreases as collateral value falls or volatility increases, and rises as risk subsides.
 
