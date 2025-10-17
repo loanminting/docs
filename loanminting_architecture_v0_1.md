@@ -247,8 +247,6 @@ Where:
 - If collateral value collapses → the put becomes very valuable → loanNAV falls toward 0.  
 - If collateral rallies → the put’s value approaches 0 → loanNAV approaches the full debt value.  
 
-This framing makes the relationship clear:  
-the lender is **short a put**, earning interest as compensation for taking on downside risk.  
 As prices, volatility, and time evolve, the option’s value updates continuously, ensuring NAV always reflects the current market risk of the loan.
 
 
