@@ -357,7 +357,7 @@ When circuit breakers are triggered due to data anomalies or extreme volatility,
 Operations are paused when:  
 - Oracle data is stale or missing  
 - Price or volatility changes exceed predefined thresholds  
-- Manual override triggered by admin  
+- Manual override triggered by admin
 
 When circuit breakers are active, minting, redemption, and origination halt until revalidation. Repay, default(), claim()/settlement remain available.
 ---
